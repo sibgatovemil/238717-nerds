@@ -37,7 +37,7 @@
     <main class="container">
       <aside class="filters">
         <form action="#" method="get">
-          <div class="cost-block">
+          <div class="filters-block">
               <div class="filters-title">Стоимость</div>
               <div class="polzunok">
                 <input type="range" min="0" max="20000" step="100" value="15000">
@@ -49,7 +49,7 @@
                 ДО <input type="text" name="maximum">
               </label>
           </div>
-          <div class="net-block">
+          <div class="filters-block">
               <div class="filters-title">Сетка</div>
                 <ul>
                   <li><input type="radio" name="net" value="adaptive" id="radio1"><label for="radio1">Адаптивная</label></li>
@@ -57,16 +57,18 @@
                   <li><input type="radio" name="net" value="elastic" id="radio3"><label for="radio3">Резиновая</label></li>
                 </ul>
           </div>
-          <div class="features-block">
+          <div class="filters-block">
               <div class="filters-title">Особенности</div>
-              <input type="checkbox" name="features-checkbox" value="slider" checked>Слайдер</p>
-              <input type="checkbox" name="features-checkbox" value="features-block">Блок преимуществ</p>
-              <input type="checkbox" name="features-checkbox" value="news" checked>Новости</p>
-              <input type="checkbox" name="features-checkbox" value="gallery">Галерея</p>
-              <input type="checkbox" name="features-checkbox" value="trash">Корзина</p>
+                <ul>
+                  <li><input type="checkbox" name="features-checkbox" value="slider" id="slider" checked><label for="slider">Слайдер</label></li>
+                  <li><input type="checkbox" name="features-checkbox" value="features-block" id="features-block"><label for="features-block">Блок преимуществ</label></li>
+                  <li><input type="checkbox" name="features-checkbox" value="news" id="news" checked><label for="news">Новости</label></li>
+                  <li><input type="checkbox" name="features-checkbox" value="gallery" id="gallery"><label for="gallery">Галерея</label></li>
+                  <li><input type="checkbox" name="features-checkbox" value="trash" id="trash"><label for="trash">Корзина</label></li>
+                </ul>
           </div>
           <div class="button-show">
-            <button type="submit">Показать</button>
+            <button class="btn btn-gray" type="submit">Показать</button>
           </div>
         </form>
       </aside>
@@ -94,7 +96,7 @@
             <div class="item-content">
               <a class="item-title">Sedona</a>
               <p class="item-description">Информационный сайт<br>для туристов</p>
-              <a class="item-btn" href="#">9 900 РУБ.</a>
+              <a class="btn btn-red" href="#">9 900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -103,7 +105,7 @@
             <div class="item-content">
               <a class="item-title">Pink App</a>
               <p class="item-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
-              <a class="item-btn" href="#">9 900 РУБ.</a>
+              <a class="btn btn-red" href="#">9 900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -112,7 +114,7 @@
             <div class="item-content">
               <a class="item-title">Barbershop</a>
               <p class="item-description">Сайт салона красоты.<br>Для мужчин, да.</p>
-              <a class="item-btn" href="#">9 900 РУБ.</a>
+              <a class="btn btn-red" href="#">9 900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -121,7 +123,7 @@
             <div class="item-content">
               <a class="item-title">Mishka</a>
               <p class="item-description">Интернет-магазин<br>вязаных игрушек</p>
-              <a class="item-btn" href="#">9 900 РУБ.</a>
+              <a class="btn btn-red" href="#">9 900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -130,7 +132,7 @@
             <div class="item-content">
               <a class="item-title">A Plus</a>
               <p class="item-description">Лендинг курсов повышения<br>квалификации</p>
-              <a class="item-btn" href="#">9 900 РУБ.</a>
+              <a class="btn btn-red" href="#">9 900 РУБ.</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -139,7 +141,7 @@
             <div class="item-content">
               <a class="item-title">Кваст</a>
               <p class="item-description">Промо-сайт производителя<br>крафтового кваса</p>
-              <a class="item-btn" href="#">9 900 РУБ.</a>
+              <a class="btn btn-red" href="#">9 900 РУБ.</a>
             </div>
           </div>
         </div>
