@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="top-header">
         <div class="logo">
           <img src="img/index-logo.png" width="160" height="65" alt="Дизайн-студия Nerds">
         </div>
@@ -19,7 +19,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -30,112 +30,125 @@
           <a class="cart-link" href="#">Корзина</a>
         </div>
       </div>
+      <div class="bottom-header">
+        <h1 class="page-title">Магазин готовых шаблонов</h>
+      </div>
     </header>
     <main class="container">
-      <section class="top">
-        <h1 class="top-header">Магазин готовых шаблонов</h>
-      </section>
-      <section class="filter-box">
-        <div class="cost-block">
-            <h2 class="filter-box-header2">СТОИМОСТЬ</h2>
-            <div class="polzunok">
-              <input type="range" min="0" max="20000" step="100" value="15000">
-            </div>
-            <label class="cost-plain-text">
-              ОТ <input type="text" name="minimum">
-            </label>
-            <label class="cost-plain-text">
-              ДО <input type="text" name="maximum">
-            </label>
-        </div>
-        <div class="net-block">
-            <h2 class="filter-box-header2">СЕТКА</h2>
-            <p class="net-block-text"><input type="radio" name="net" value="adaptive" checked>Адаптивная</p>
-            <p class="net-block-text"><input type="radio" name="net" value="fixed">Фиксированная</p>
-            <p class="net-block-text"><input type="radio" name="net" value="elastic">Резиновая</p>
-        </div>
-        <div class="features-block">
-            <h2 class="filter-box-header2">ОСОБЕННОСТИ</h2>
-            <input type="checkbox" name="features-checkbox" value="slider" checked>Слайдер</p>
-            <input type="checkbox" name="features-checkbox" value="features-block">Блок преимуществ</p>
-            <input type="checkbox" name="features-checkbox" value="news" checked>Новости</p>
-            <input type="checkbox" name="features-checkbox" value="gallery">Галерея</p>
-            <input type="checkbox" name="features-checkbox" value="trash">Корзина</p>
-        </div>
-        <div class="button-show">
-          <input type="button" value="ПОКАЗАТЬ">
-        </div>
-      </section>
-      <section class="product-net">
+      <aside class="filters">
+        <form action="#" method="get">
+          <div class="cost-block">
+              <div class="filters-title">Стоимость</div>
+              <div class="polzunok">
+                <input type="range" min="0" max="20000" step="100" value="15000">
+              </div>
+              <label class="cost-plain-text">
+                ОТ <input type="text" name="minimum">
+              </label>
+              <label class="cost-plain-text">
+                ДО <input type="text" name="maximum">
+              </label>
+          </div>
+          <div class="net-block">
+              <div class="filters-title">Сетка</div>
+                <ul>
+                  <li><input type="radio" name="net" value="adaptive" id="radio1"><label for="radio1">Адаптивная</label></li>
+                  <li><input type="radio" name="net" value="fixed" id="radio2"><label for="radio2">Фиксированная</label></li>
+                  <li><input type="radio" name="net" value="elastic" id="radio3"><label for="radio3">Резиновая</label></li>
+                </ul>
+          </div>
+          <div class="features-block">
+              <div class="filters-title">Особенности</div>
+              <input type="checkbox" name="features-checkbox" value="slider" checked>Слайдер</p>
+              <input type="checkbox" name="features-checkbox" value="features-block">Блок преимуществ</p>
+              <input type="checkbox" name="features-checkbox" value="news" checked>Новости</p>
+              <input type="checkbox" name="features-checkbox" value="gallery">Галерея</p>
+              <input type="checkbox" name="features-checkbox" value="trash">Корзина</p>
+          </div>
+          <div class="button-show">
+            <button type="submit">Показать</button>
+          </div>
+        </form>
+      </aside>
+      <section class="catalog">
         <div class="sorting-settings">
-          <div class="sorting-left-container">
-            <h2 class="filter-box-header2">СОРТИРОВАТЬ</h2>
+          <div class="left-container">
+            <p class="sorting-title">Сортировать</p>
           </div>
-          <div class="sorting-right-container">
-            <div class="sorting-refers"><a href="#">ПО ЦЕНЕ</a></div>
-            <div class="sorting-refers"><a href="#">ПО ТИПУ</a></div>
-            <div class="sorting-refers"><a href="#">ПО НАЗВАНИЮ</a></div>
-            <div class="sorting-buttons"><a href="#"><img src="#" width="9" height="9" alt="Down"></a></div>
-            <div class="sorting-buttons"><a href="#"><img src="#" width="9" height="9" alt="Up"></a></div>
-          </div>
-        </div>
-        <div class="net-container">
-          <div class="product-item">
-            <div class="item-head-img"><img src="#" width="360" height="40" alt="browser"></div>
-            <div class="item-template"><img src="#" width="360" height="576" alt="template"></div>
-            <div class="item-cover-background" hidden><img src="#" width="360" height="231" alt="template"></div>
-            <div class="item-h3"><h3 class="template name">Sedona</h3></div>
-            <div class="item-description"><p class="description">Информационный сайт
-для туристов</p></div>
-            <div class="item-button"><a href="#">9 900 РУБ.</a></div>
-          </div>
-          <div class="product-item">
-            <div class="item-head-img"><img src="#" width="360" height="40" alt="browser"></div>
-            <div class="item-template"><img src="#" width="360" height="576" alt="template"></div>
-            <div class="item-cover-background" hidden><img src="#" width="360" height="231" alt="template"></div>
-            <div class="item-h3"><h3 class="template name"></h3></div>
-            <div class="item-description"><p class="description"></p></div>
-            <div class="item-button"><a href="#"></a></div>
-          </div>
-          <div class="product-item">
-            <div class="item-head-img"><img src="#" width="360" height="40" alt="browser"></div>
-            <div class="item-template"><img src="#" width="360" height="576" alt="template"></div>
-            <div class="item-cover-background" hidden><img src="#" width="360" height="231" alt="template"></div>
-            <div class="item-h3"><h3 class="template name"></h3></div>
-            <div class="item-description"><p class="description"></p></div>
-            <div class="item-button"><a href="#"></a></div>
-          </div>
-          <div class="product-item">
-            <div class="item-head-img"><img src="#" width="360" height="40" alt="browser"></div>
-            <div class="item-template"><img src="#" width="360" height="576" alt="template"></div>
-            <div class="item-cover-background" hidden><img src="#" width="360" height="231" alt="template"></div>
-            <div class="item-h3"><h3 class="template name"></h3></div>
-            <div class="item-description"><p class="description"></p></div>
-            <div class="item-button"><a href="#"></a></div>
-          </div>
-          <div class="product-item">
-            <div class="item-head-img"><img src="#" width="360" height="40" alt="browser"></div>
-            <div class="item-template"><img src="#" width="360" height="576" alt="template"></div>
-            <div class="item-cover-background" hidden><img src="#" width="360" height="231" alt="template"></div>
-            <div class="item-h3"><h3 class="template name"></h3></div>
-            <div class="item-description"><p class="description"></p></div>
-            <div class="item-button"><a href="#"></a></div>
-          </div>
-          <div class="product-item">
-            <div class="item-head-img"><img src="#" width="360" height="40" alt="browser"></div>
-            <div class="item-template"><img src="#" width="360" height="576" alt="template"></div>
-            <div class="item-cover-background" hidden><img src="#" width="360" height="231" alt="template"></div>
-            <div class="item-h3"><h3 class="template name"></h3></div>
-            <div class="item-description"><p class="description"></p></div>
-            <div class="item-button"><a href="#"></a></div>
+          <div class="right-container">
+            <ul>
+              <li class="sorting-refers"><a class="active">По цене</a></li>
+              <li class="sorting-refers"><a href="#">По типу</a></li>
+              <li class="sorting-refers"><a href="#">По названию</a></li>
+            </ul>
+            <div class="arrows">
+              <a class="arrow-down active" href="#"></a></div>
+              <a class="arrow-up" href="#"></a></div>
+            </div>
           </div>
         </div>
-        <div class="page-switcher">
-          <div class="number-sorting-buttons"><a href="#"><img src="#" width="50" height="50" alt="1"></a></div>
-          <div class="number-sorting-buttons"><a href="#"><img src="#" width="50" height="50" alt="2"></a></div>
-          <div class="number-sorting-buttons"><a href="#"><img src="#" width="50" height="50" alt="3"></a></div>
-          <div class="next-sorting-button"><a href="#"><img src="#" width="50" height="50" alt="3"></a></div>
+        <div class="catalog-items">
+          <div class="catalog-item">
+            <div class="item-head"><div class="circle"></div></div>
+            <div class="item-image"><img src="#" width="360" height="576" alt="template"></div>
+            <div class="item-content">
+              <a class="item-title">Sedona</a>
+              <p class="item-description">Информационный сайт<br>для туристов</p>
+              <a class="item-btn" href="#">9 900 РУБ.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="item-head"><div class="circle"></div></div>
+            <div class="item-image"><img src="#" width="360" height="576" alt="template"></div>
+            <div class="item-content">
+              <a class="item-title">Pink App</a>
+              <p class="item-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
+              <a class="item-btn" href="#">9 900 РУБ.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="item-head"><div class="circle"></div></div>
+            <div class="item-image"><img src="#" width="360" height="576" alt="template"></div>
+            <div class="item-content">
+              <a class="item-title">Barbershop</a>
+              <p class="item-description">Сайт салона красоты.<br>Для мужчин, да.</p>
+              <a class="item-btn" href="#">9 900 РУБ.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="item-head"><div class="circle"></div></div>
+            <div class="item-image"><img src="#" width="360" height="576" alt="template"></div>
+            <div class="item-content">
+              <a class="item-title">Mishka</a>
+              <p class="item-description">Интернет-магазин<br>вязаных игрушек</p>
+              <a class="item-btn" href="#">9 900 РУБ.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="item-head"><div class="circle"></div></div>
+            <div class="item-image"><img src="#" width="360" height="576" alt="template"></div>
+            <div class="item-content">
+              <a class="item-title">A Plus</a>
+              <p class="item-description">Лендинг курсов повышения<br>квалификации</p>
+              <a class="item-btn" href="#">9 900 РУБ.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="item-head"><div class="circle"></div></div>
+            <div class="item-image"><img src="#" width="360" height="576" alt="template"></div>
+            <div class="item-content">
+              <a class="item-title">Кваст</a>
+              <p class="item-description">Промо-сайт производителя<br>крафтового кваса</p>
+              <a class="item-btn" href="#">9 900 РУБ.</a>
+            </div>
+          </div>
         </div>
+        <ul class="pagination">
+          <li><a class="active"><img src="#" width="50" height="50" alt="1"></a></li>
+          <li><a href="#"><img src="#" width="50" height="50" alt="2"></a></li>
+          <li><a href="#"><img src="#" width="50" height="50" alt="3"></a></li>
+          <li><a class="next-page" href="#"><img src="#" width="50" height="50" alt="3"></a></li>
+        </ul>
       </section>
     </main>
     <footer>
