@@ -6,31 +6,31 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="top-header">
-        <div class="logo">
-          <img src="img/index-logo.png" width="160" height="65" alt="Дизайн-студия Nerds">
+      <div class="container">
+        <div class="top-header">
+          <div class="logo">
+            <img src="img/index-logo.png" width="160" height="65" alt="Дизайн-студия Nerds">
+          </div>
+          <nav class="main-container">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a class="active">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <a class="cart-link" href="#">Корзина</a>
+          </div>
         </div>
-        <nav class="main-container">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a class="active">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="cart">
-          <a class="cart-link" href="#">Корзина</a>
-        </div>
-      </div>
-      <div class="bottom-header">
         <h1 class="page-title">Магазин готовых шаблонов</h>
       </div>
     </header>
@@ -74,19 +74,15 @@
       </aside>
       <section class="catalog">
         <div class="sorting-settings">
-          <div class="left-container">
-            <p class="sorting-title">Сортировать</p>
-          </div>
-          <div class="right-container">
-            <ul>
-              <li class="sorting-refers"><a class="active">По цене</a></li>
-              <li class="sorting-refers"><a href="#">По типу</a></li>
-              <li class="sorting-refers"><a href="#">По названию</a></li>
-            </ul>
-            <div class="arrows">
-              <a class="arrow-down active" href="#"></a></div>
-              <a class="arrow-up" href="#"></a></div>
-            </div>
+          <div class="sorting-title">Сортировать</div>
+          <ul>
+            <li class="sorting-refers"><a class="active">По цене</a></li>
+            <li class="sorting-refers"><a href="#">По типу</a></li>
+            <li class="sorting-refers"><a href="#">По названию</a></li>
+          </ul>
+          <div class="arrows">
+            <a class="arrow-down active" href="#"></a>
+            <a class="arrow-up" href="#"></a>
           </div>
         </div>
         <div class="catalog-items">
@@ -153,35 +149,49 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <section class="contacts-block">
-        <div class="contacts-box">
-          <p class="contacts-box-header">NЁRDS DESIGN STUDIO</p>
-          <p class="contacts-box-adress">191186, Санкт-Петербург,<br>
-                                        ул. Б. Конюшенная, д. 19/8<br>
-                                        <br>
-                                        тел. +7 (812) 275-75-75</p>
-          <a class="contacts-box-button" href="#">НАПИШИТЕ НАМ</a>
+    <footer class="footer-whole">
+      <div class="map">
+        <div class="contacts">
+          <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+          <p class="contacts-adress">191186, Санкт-Петербург,<br>
+                                     ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-adress">тел. +7 (812) 275-75-75</p>
+          <a class="btn" href="#">НАПИШИТЕ НАМ</a>
         </div>
-        <img class="map-pointer" src="#" width="231" height="190" alt="Адрес дизайн-студии Nerds">
-      </section>
-      <div class="footer-container">
-        <div class="social-links-block">
-          <div class="social-links-item">
-            <a href="#"><img src="#" width="" height="" alt="Наша группа в Вконтакте"></a>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="social-btns">
+              <a class="social-btn social-btn-vk" href="#"></a>
+              <a class="social-btn social-btn-fb" href="#"></a>
+              <a class="social-btn social-btn-in" href="#"></a>
           </div>
-          <div class="social-links-item">
-            <a href="#"><img src="#" width="" height="" alt="Наш паблик в facebook"></a>
+          <div class="footer-promo">
+            <p class="footer-promo-header">Давайте дружить, это выгодно!</p>
+            <p class="footer-promo-text">Скидка 10% для друзей из социальных сетей.</p>
           </div>
-          <div class="social-links-item">
-            <a href="#"><img src="#" width="" height="" alt="Наш аккаунт в Instagram"></a>
-          </div>
-        </div>
-        <div class="discount-block">
-          <p class="footer-discount-header">Давайте дружить, это выгодно!</p>
-          <p class="footer-discount-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
+    <div class="popup">
+      <p class="popup-title">Напишите нам</p>
+      <a class="close-btn" href="#"></a>
+      <form action="#" method="get">
+        <div class="field-description name"><label>Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label></div>
+        <div class="field-description mail"><label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа"></label></div>
+        <div class="field-description mailtext"><label>Текст письма:<textarea name="comment" rows="7">В свободной форме</textarea></label></div>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="popup">
+      <p class="popup-title">Напишите нам</p>
+      <a class="close-btn" href="#"></a>
+      <form action="#" method="get">
+        <div class="field-description name"><label>Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label></div>
+        <div class="field-description mail"><label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа"></label></div>
+        <div class="field-description mailtext"><label>Текст письма:<textarea name="comment" rows="7">В свободной форме</textarea></label></div>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
