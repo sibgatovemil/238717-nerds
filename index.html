@@ -122,14 +122,16 @@
           <a class="partner"><img src="#" width="298" height="180" alt="Mishka"></a>
       </div>
     </main>
-    <footer class="footer-whole">
+    <footer class="footer">
       <div class="map">
-        <div class="contacts">
-          <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
-          <p class="contacts-adress">191186, Санкт-Петербург,<br>
-                                     ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-adress">тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+        <div class="container">
+          <div class="contacts">
+            <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+            <p class="contacts-adress">191186, Санкт-Петербург,<br>
+                                       ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-adress">тел. +7 (812) 275-75-75</p>
+            <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -148,11 +150,11 @@
     </footer>
     <div class="popup">
       <p class="popup-title">Напишите нам</p>
-      <a class="close-btn" href="#"></a>
+      <button type="button" class="exit">Крестик</button>
       <form action="#" method="get">
-        <div class="field-description name"><label>Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label></div>
-        <div class="field-description mail"><label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа"></label></div>
-        <div class="field-description mailtext"><label>Текст письма:<textarea name="comment" rows="7">В свободной форме</textarea></label></div>
+        <div class="field-description"><label>Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label></div>
+        <div class="field-description"><label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа"></label></div>
+        <div class="field-description"><label for="txtarea">Текст письма:</label><textarea name="comment" rows="7" id="txtarea">В свободной форме</textarea></div>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
