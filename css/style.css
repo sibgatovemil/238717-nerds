@@ -2,3 +2,135 @@ body {
   font-size: 14px;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #eeeeee;
+  height: 545px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+.top-header {
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 160px;
+  height: 65px;
+  float: left;
+}
+
+.main-menu {
+  width: 870px;
+  margin: 0 auto;
+  height: 65px;
+  float: left;
+}
+
+.main-menu li {
+  list-style: none;
+  display: inline;
+  margin-right: 49px;
+}
+
+.cart {
+  width: 130 px;
+  height: 65px;
+  vertical-align: middle;
+  float: right;
+}
+
+.slider-block {
+  height: 430px;
+}
+
+.slider-content-left {
+    width: 400px;
+    float: left;
+}
+
+.slider-content-right {
+  width: 760px;
+  float: right;
+}
+
+.service-items {
+  border-bottom: 2px solid #eeeeee;
+  padding: 0 30px;
+}
+
+.service-item  {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  padding-bottom: 80px;
+}
+
+.service-item:last-child {
+  margin-right: 0;
+}
+
+.description-left-column {
+  width: 700px;
+  float: left;
+}
+
+.description-right-column {
+  width: 360px;
+  float: right;
+}
+
+.partners {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 80px;
+}
+
+.partner {
+  width:280px;
+  height: 180px;
+  float:left;
+  opacity: 0.2;
+}
+
+.partner:last-child {
+  margin-right: 0;
+}
+
+.map {
+  background-image: url("../img/map.jpg");
+  background-position: 50% 50%;
+  height: 418px;
+}
+
+.map .container {
+  background-position: 0 54px;
+  background-color: white;
+  width: 320px;
+}
+
+.social-btns {
+  width: 260px;
+  float: left;
+}
+
+.footer-promo {
+  width: 545px;
+  float: right;;
+}
+
+.dispno {
+  display: none;
+}
