@@ -15,7 +15,6 @@ body {
 
 .main-header {
   background-color: #eeeeee;
-  height: 545px;
   padding-top: 50px;
   margin-bottom: 80px;
 }
@@ -66,6 +65,10 @@ body {
   float: right;
 }
 
+.page-title {
+
+}
+
 .service-items {
   border-bottom: 2px solid #eeeeee;
   padding: 0 30px;
@@ -101,7 +104,7 @@ body {
 .partner {
   width:280px;
   height: 180px;
-  float:left;
+  float: left;
   opacity: 0.2;
 }
 
@@ -129,6 +132,20 @@ body {
 .footer-promo {
   width: 545px;
   float: right;;
+}
+
+.aside {
+  width: 300px;
+  float: left;
+}
+
+.cost-plain-text {
+  width: 80px;
+}
+
+.catalog {
+  width: 760px;
+  float: right;
 }
 
 .dispno {
