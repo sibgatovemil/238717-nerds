@@ -57,13 +57,13 @@
           </div>
           <div class="slider-content-right">
             <div class="slider-image-1">
-              <img src="img/slide1.jpg" width="760" height="431" alt="">
+              <img src="img/slider-1.jpg" width="760" height="431" alt="">
             </div>
             <div class="slider-image-2 dispno">
-              <img src="img/slide2.jpg" width="760" height="431" alt="">
+              <img src="img/slider-2.jpg" width="760" height="431" alt="">
             </div>
             <div class="slider-image-3 dispno">
-              <img src="img/slide3.jpg" width="760" height="431" alt="">
+              <img src="img/slider-3.jpg" width="760" height="431" alt="">
             </div>
           </div>
           <div class="slider-radio-buttons">
@@ -77,19 +77,19 @@
     <main class="container">
       <div class="service-items clearfix">
         <div class="service-item">
-          <img src="#" width="300" height="146" alt="Веб-сайты">
+          <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
           <h2 class="service-title">Веб-сайты</h2>
           <p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="service-item">
-          <img src="#" width="300" height="146" alt="Приложения">
+          <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
           <h2 class="service-title">Приложения</h2>
           <p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn btn-green" href="#">Заказать</a>
         </div>
         <div class="service-item">
-          <img src="#" width="300" height="146" alt="Презентации">
+          <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
           <h2 class="service-title">Презентации</h2>
           <p class="service-description">Вы даже не подозреваете,
 насколько вы изумительны!</p>
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="description-block clearfix">
-        <div class="description-left-column">
+        <div class="description-left">
           <h1 class="description-header">Мы — маленькая, но гордая
 дизайн-студия из Краснодара.</h1>
           <p class="description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -109,8 +109,8 @@
             <li class="description-list-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="description-right-column">
-          <img src="#" width="360" height="208" alt="Дизайн-студия Нёрдс в Краснодаре">
+        <div class="description-right">
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Дизайн-студия Нёрдс в Краснодаре">
           <p class="description-little-header">с 2004 года Любим точность во всем:</p>
           <ul>
             <li class="description-numbers"><span>146%</span>Уровень самоотдачи</li>
@@ -141,9 +141,9 @@
       <div class="footer-bottom">
         <div class="container clearfix">
           <div class="social-btns">
-              <a class="social-btn social-btn-vk" href="#">vk</a>
-              <a class="social-btn social-btn-fb" href="#">fb</a>
-              <a class="social-btn social-btn-in" href="#">in</a>
+              <a class="social-btn social-btn-vk" href="#"></a>
+              <a class="social-btn social-btn-fb" href="#"></a>
+              <a class="social-btn social-btn-in" href="#"></a>
           </div>
           <div class="footer-promo">
             <p class="footer-promo-header">Давайте дружить, это выгодно!</p>
@@ -152,12 +152,16 @@
         </div>
       </div>
     </footer>
-    <div class="popup dispno">
-      <p class="popup-title">Напишите нам</p>
-      <button type="button" class="exit">Крестик</button>
+    <div class="popup">
+      <div class="popup-top">
+        <p class="popup-title">Напишите нам</p>
+        <button type="button" class="exit">Крестик</button>
+      </div>
       <form action="#" method="get">
-        <div class="field-description"><label>Ваше имя:<input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label></div>
-        <div class="field-description"><label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа"></label></div>
+        <div class="fields-inline">
+          <div class="field-description"><label>Ваше имя:<p><input type="text" name="username" placeholder="Представьтесь, пожалуйста"></p></label></div>
+          <div class="field-description"><label>Ваш e-mail:<p><input type="text" name="mail" placeholder="Для отправки ответа"></p></label></div>
+        </div>
         <div class="field-description"><label for="txtarea">Текст письма:</label><textarea name="comment" rows="7" id="txtarea">В свободной форме</textarea></div>
         <button class="btn" type="submit">Отправить</button>
       </form>
