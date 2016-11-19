@@ -1,5 +1,6 @@
 body {
-  font-size: 14px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .clearfix::after {
@@ -35,13 +36,13 @@ body {
 
 .main-menu {
   width: 870px;
-  padding-top: 33px;
+  padding-top: 25px;
   margin: 0 auto;
   float: left;
 }
 
 .main-menu ul {
-  padding: 0px;
+  padding: 0;
   font-size: 0px;
 }
 
@@ -49,7 +50,7 @@ body {
   list-style: none;
   display: inline-block;
   vertical-align: top;
-  margin-right: 49px;
+  margin-right: 46px;
   font-size:14px;
 }
 
@@ -61,12 +62,72 @@ body {
   margin-right: 0px;
 }
 
+.main-menu li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 .cart {
   width: 130px;
-  padding-top: 33px;
+  padding-top: 25px;
   vertical-align: middle;
   text-align: right;
   float: right;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.slider-content-header {
+  padding: 0;
+  margin-bottom:0;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-content-text {
+  padding-top: 10px;
+  padding-bottom: 14px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  display:block;
+  width:240px;
+  padding:16px 0;
+  margin-top:25px;
+  font-size:16px;
+  line-height: 18px;
+  color:white;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight: 400;
+  text-decoration:none;
+  background:#fb565a;
+  border-radius:3px;
+}
+
+.service-item > .btn {
+  width: 160px;
+}
+
+.btn-green {
+  background:#00ca74;
+}
+
+.btn-yellow {
+  background:#efc84a;
 }
 
 .slider-block {
@@ -74,6 +135,7 @@ body {
 }
 
 .slider-content-left {
+    margin-top: 32px;
     width: 400px;
     float: left;
 }
@@ -94,7 +156,7 @@ body {
 
 .service-items {
   border-bottom: 2px solid #eeeeee;
-  padding: 0 30px;
+  padding: 0;
 }
 
 .service-item  {
@@ -108,14 +170,83 @@ body {
   margin-right: 0;
 }
 
+.service-title {
+  margin-top: 23px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.service-description {
+  padding: 0;
+  line-height: 1.5;
+  margin-bottom: 33px;
+}
+
+.description-block {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 .description-left {
-  width: 700px;
+  width: 660px;
   float: left;
+}
+
+.description-header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.description-text {
+  padding-top: 2px;
+  line-height: 1.5;
+}
+
+.description-little-header {
+  font-size: 16px;
+  line-height: 1.5px;
+  text-transform:uppercase;
+  font-weight: 700;
+  padding-top: 33px;
+}
+
+.description-list {
+  padding: 0;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.description-list-item {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 24px;
+  font-weight: 400;
+}
+
+.description-list-item::before {
+  content: "";
+  background: #fc6f73;
+  width: 25px;
+  height: 2px;
 }
 
 .description-right {
   width: 360px;
   float: right;
+}
+
+.description-little-header2 {
+  font-size: 16px;
+  line-height: 1.5px;
+  text-transform:uppercase;
+  font-weight: 700;
+  text-align:center;
+  padding: 26px 0px 35px 3px;
 }
 
 .description-right ul {
@@ -127,24 +258,65 @@ body {
   width: 110px;
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.description-right li:nth-last-child {
+  margin-right: 0px;
+}
+
+li>span {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+span>sup {
+    line-height: 10px;
+    font-size: 27px;
+}
+
+li>p {
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .partners {
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .partner {
-  width:280px;
+  width: 298px;
   height: 180px;
   float: left;
   opacity: 0.2;
+  position: relative;
+}
+
+.partner > img {
+  position: relative;
+  vertical-align: middle;
+}
+
+.partner:first-child {
+  width: 279px;
 }
 
 .partner:last-child {
+  width: 279px;
   margin-right: 0;
+}
+
+.vertical-line {
+  position: relative;
+  top: 64px;
+  float:left;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
 }
 
 .filters {
@@ -241,6 +413,12 @@ body {
   width: 320px;
   padding:50px;
   background: white;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .social-btns {
