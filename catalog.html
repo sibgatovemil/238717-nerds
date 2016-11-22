@@ -38,30 +38,34 @@
     </header>
     <main class="container clearfix">
       <aside class="filters">
-        <form action="#" method="get">
+        <form action="form.php" method="get">
           <div class="filters-block">
-              <div class="filters-title">Стоимость</div>
-              <div class="polzunok">
-                <input type="range" min="0" max="20000" step="100" value="15000">
+              <div class="filters-title">Стоимость:</div>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
               </div>
-              <label class="cost-plain-text">
-                ОТ <input type="text" name="minimum">
-              </label>
-              <label class="cost-plain-text">
-                ДО <input type="text" name="maximum">
-              </label>
           </div>
           <div class="filters-block">
-              <div class="filters-title">Сетка</div>
-                <ul>
+              <div class="filters-title">Сетка:</div>
+                <ul class="radios">
                   <li><input type="radio" name="net" value="adaptive" id="radio1"><label for="radio1">Адаптивная</label></li>
                   <li><input type="radio" name="net" value="fixed" id="radio2"><label for="radio2">Фиксированная</label></li>
                   <li><input type="radio" name="net" value="elastic" id="radio3"><label for="radio3">Резиновая</label></li>
                 </ul>
           </div>
           <div class="filters-block">
-              <div class="filters-title">Особенности</div>
-                <ul>
+              <div class="filters-title">Особенности:</div>
+                <ul class="checkboxes">
                   <li><input type="checkbox" name="features-checkbox" value="slider" id="slider" checked><label for="slider">Слайдер</label></li>
                   <li><input type="checkbox" name="features-checkbox" value="features-block" id="features-block"><label for="features-block">Блок преимуществ</label></li>
                   <li><input type="checkbox" name="features-checkbox" value="news" id="news" checked><label for="news">Новости</label></li>
@@ -144,10 +148,10 @@
           </div>
         </div>
         <ul class="pagination">
-          <li><a class="active"><img src="#" width="50" height="50" alt="1"></a></li>
-          <li><a href="#"><img src="#" width="50" height="50" alt="2"></a></li>
-          <li><a href="#"><img src="#" width="50" height="50" alt="3"></a></li>
-          <li><a class="next-page" href="#"><img src="#" width="260" height="50" alt="следующая"></a></li>
+          <li><a class="active">1</a></li>
+          <li><a href="#"></a>2</li>
+          <li><a href="#"></a>3</li>
+          <li><a class="next-page" href="#">Cледующая</a></li>
         </ul>
       </section>
     </main>
@@ -180,14 +184,14 @@
     <div class="popup">
       <div class="popup-top">
         <p class="popup-title">Напишите нам</p>
-        <button type="button" class="exit">Крестик</button>
+        <button class="exit-button" type="button" title="Закрыть">Крестик</button>
       </div>
       <form action="#" method="get">
         <div class="fields-inline">
           <div class="field-description"><label>Ваше имя:<p><input type="text" name="username" placeholder="Представьтесь, пожалуйста"></p></label></div>
           <div class="field-description"><label>Ваш e-mail:<p><input type="text" name="mail" placeholder="Для отправки ответа"></p></label></div>
         </div>
-        <div class="field-description"><label for="txtarea">Текст письма:</label><textarea name="comment" rows="7" id="txtarea">В свободной форме</textarea></div>
+        <div class="field-textarea"><label for="txtarea">Текст письма:</label><textarea name="comment" rows="7" id="txtarea">В свободной форме</textarea></div>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
