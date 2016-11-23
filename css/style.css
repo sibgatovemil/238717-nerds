@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .clearfix::after {
@@ -11,6 +11,8 @@ body {
 
 .container {
   width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -276,6 +278,7 @@ nav a.active {
 
 .slide-text p {
   margin: 0;
+  width: 415px;
   margin-top: 25px;
   margin-bottom: 40px;
 }
@@ -519,11 +522,11 @@ li > p {
   margin-right: 0;
 }
 
-.partner >img:hover {
+.partner > img:hover {
   opacity: 1;
 }
 
-.partner >img:active {
+.partner > img:active {
   opacity: 0.1;
 }
 
@@ -646,7 +649,7 @@ li > p {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   width: 60px;
   margin-left: 10px;
@@ -953,10 +956,6 @@ li > p {
   left: 0px;
 }
 
-.item-content:hover {
-  border-top: 1px solid #4d4d4d;
-}
-
 .catalog-item:hover .item-content {
   display: block;
 }
@@ -993,83 +992,77 @@ li > p {
   margin-right: 0px;
 }
 
+
 .pagination {
-  margin-top: 25px;
-  margin-bottom: 60px;
-  padding: 0px;
-  font-size: 0px;
+ margin-top: 25px;
+ margin-bottom: 60px;
+ padding: 0px;
+ font-size: 0px;
 }
 
 .pagination li {
-  width: 50px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 11px;
-  background-color: #eeeeee;
-  color: black;
-  border-radius: 3px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+ margin-right: 11px;
+ display: inline-block;
+ vertical-align: top;
 }
 
 .pagination a {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
+ width: 50px;
+ display: inline-block;
+ vertical-align: top;
+ font-family: "Roboto", "Arial", sans-serif;
+ font-size: 16px;
+ line-height: 18px;
+ font-weight: 400;
+ text-decoration: none;
+ text-transform: uppercase;
+ background-color: #eeeeee ;
+ color: black;
+ border-radius: 3px;
+ text-align: center;
+ padding-top: 15px;
+ padding-bottom: 15px;
 }
 
-.pagination li:hover {
-  background-color: #dfdfdf;
+.pagination a:hover {
+ background-color: #dfdfdf ;
 }
 
-.pagination li:active {
-  color: #a8a8a8;
-  background: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 #bfbfbf;
-}
-
-.pagination li:active a {
-  color: #a8a8a8;
+.pagination a:active {
+ color: #a8a8a8 ;
+ background: #d5d5d5 ;
+ box-shadow: inset 0 3px 0 0 #bfbfbf ;
 }
 
 .pagination .active {
-  background: white;
-  border: 3px solid #dbdbdb;
-  border-radius: 3px;
-  width: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+ background: white;
+ border: 3px solid #dbdbdb ;
+ border-radius: 3px;
+ width: 44px;
+ padding-top: 12px;
+ padding-bottom: 12px;
 }
 
 .pagination .active:active {
-  width: 50px;
-  border: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #a8a8a8;
-  background: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 #bfbfbf;
+ background: white;
 }
 
-.next-page a {
-  display: block;
+.pagination .active:hover {
+ color: black;
+ background: white;
+ box-shadow: none;
 }
 
 .pagination .next-page {
-  width: 260px;
-  display: inline-block;
-  vertical-align: top;
-  background-color: #eeeeee;
-  color: black;
-  border-radius: 3px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+ width: 260px;
+ display: inline-block;
+ vertical-align: top;
+ background-color: #eeeeee ;
+ color: black;
+ border-radius: 3px;
+ text-align: center;
+ padding-top: 15px;
+ padding-bottom: 15px;
 }
 
 .map {
@@ -1211,6 +1204,7 @@ li > p {
 }
 
 .popup {
+  display: none;
   width:960px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -1266,13 +1260,14 @@ li > p {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 18px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #d7dcde;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -1309,7 +1304,7 @@ textarea {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   height: 91px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1372,7 +1367,7 @@ textarea:focus {
 
 button.btn {
   border: none;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 form > .btn {
@@ -1380,8 +1375,4 @@ form > .btn {
   margin-top: 42px;
   margin-bottom: 84px;
   width: 260px;
-}
-
-.dispno {
-  display: none;
 }
